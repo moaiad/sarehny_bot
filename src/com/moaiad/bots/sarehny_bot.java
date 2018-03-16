@@ -47,7 +47,7 @@ public class sarehny_bot extends TelegramLongPollingBot {
 
             sticker_id=  update.getMessage().getSticker().getFileId();
 
-            chat_id=update.getMessage().getChatId();
+
 
 
 
