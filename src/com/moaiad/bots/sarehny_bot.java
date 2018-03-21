@@ -9,9 +9,9 @@ import org.telegram.telegrambots.exceptions.TelegramApiException;
 public class sarehny_bot extends TelegramLongPollingBot {
 
 
-
+    long mychat_id;
         long chat_id;
-        id t=new id() ;
+       // id t=new id() ;
         String sticker_id;
 
 
@@ -31,7 +31,7 @@ public class sarehny_bot extends TelegramLongPollingBot {
                 System.out.println(chat_id+massege_text);
 
                 SendMessage message =new SendMessage();
-                message.setChatId(t.getMychatid());
+                message.setChatId(chat_id);
                 message.setText(massege_text);
 
                 try {
@@ -72,12 +72,12 @@ public class sarehny_bot extends TelegramLongPollingBot {
 
         @Override
         public String getBotUsername() {
-            return t.getUsername();
+            return "sarehny_bot";
         }
 
         @Override
         public String getBotToken() {
-            return t.getToken();
+            return "488555910:AAG4bK6opYRJTJ0byPMVRfvT_Pn-oHVQ_20";
         }
 
 
